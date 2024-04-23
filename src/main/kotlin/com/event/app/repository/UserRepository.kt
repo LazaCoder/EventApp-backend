@@ -24,7 +24,7 @@ class User(
     val age: Int,
 
     @Column(name = "image_id", nullable = false)  // Adjusted to match database column name
-    val image_id: Int,
+    val image_id: String,
 
     @Column(name = "Description", length = 500)  // Adjusted to match database column name
     val description: String,
@@ -37,4 +37,7 @@ class User(
 
 @Repository
 interface UserRepository : JpaRepository<User, Long> {
+
+    fun findByName(name: String): User?
+
 }
