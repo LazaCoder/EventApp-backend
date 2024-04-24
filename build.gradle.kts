@@ -24,7 +24,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	runtimeOnly("com.microsoft.sqlserver:mssql-jdbc")
+	runtimeOnly ("org.postgresql:postgresql")
+	implementation(platform("io.github.jan-tennert.supabase:bom:2.3.1"))
+	implementation("io.github.jan-tennert.supabase:postgrest-kt")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
