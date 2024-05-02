@@ -1,5 +1,6 @@
 package com.event.app.controllers
 
+import com.event.app.models.LoginRequest
 import com.event.app.models.User
 import com.event.app.repository.UserRepository
 import org.springframework.http.HttpStatus
@@ -26,7 +27,4 @@ class AuthController(private val userRepository: UserRepository) {
 }
 
 
-data class LoginRequest(
-    val name: String,
-    val password: String
-)
+

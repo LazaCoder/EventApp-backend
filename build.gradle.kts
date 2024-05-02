@@ -28,6 +28,7 @@ dependencies {
 	runtimeOnly ("org.postgresql:postgresql")
 	implementation(platform("io.github.jan-tennert.supabase:bom:2.3.1"))
 	implementation("io.github.jan-tennert.supabase:postgrest-kt")
+	implementation ("org.java-websocket:Java-WebSocket:1.5.2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
