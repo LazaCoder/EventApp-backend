@@ -1,6 +1,6 @@
 package com.event.app.controllers
 
-import com.event.app.repository.Event
+import com.event.app.models.Event
 import com.event.app.repository.EventRepository
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
