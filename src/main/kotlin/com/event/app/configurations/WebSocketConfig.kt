@@ -11,7 +11,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 class WebSocketConfig : WebSocketMessageBrokerConfigurer {
     override fun registerStompEndpoints(registry: StompEndpointRegistry) {
         registry.addEndpoint("/ws")
-            .setAllowedOrigins("https://eventapp-backend-production-baa5.up.railway.app", "http://localhost:5500")
+            .setAllowedOrigins("https://eventapp-backend-production-baa5.up.railway.app", "http://127.0.0.1:5500")
             .withSockJS()
     }
 
